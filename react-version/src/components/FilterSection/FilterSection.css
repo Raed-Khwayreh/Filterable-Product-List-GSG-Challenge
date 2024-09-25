@@ -1,0 +1,53 @@
+.filter-section {
+  border: #333 2px solid;
+  border-radius: 55px;
+  margin-bottom: 20px;
+}
+
+.filter-section button {
+  padding: 10px 25px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: transparent;
+  color: black;
+  border: none;
+  border-radius: 55px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.filter-section button:not(.active):hover {
+  background-color: var(--hover-color);
+}
+
+.filter-section button.active {
+  background-color: var(--primary-color);
+}
+
+@media (max-width: 570px) {
+  .filter-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  .filter-section button:not(:first-child, :last-child) {
+    border-radius: 0px;
+  }
+
+  .filter-section button:first-child,
+  .filter-section button:last-child {
+    border-radius: 20px;
+  }
+
+  .filter-section button:first-child {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+
+  .filter-section button:last-child {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+}
