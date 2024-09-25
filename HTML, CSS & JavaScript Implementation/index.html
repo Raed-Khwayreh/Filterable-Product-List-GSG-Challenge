@@ -10,12 +10,21 @@
     <div class="container">
       <h1>Product List</h1>
       <div class="filter-section">
-        <button>All</button>
-        <button>Electronics</button>
-        <button>Clothing</button>
-        <button>Furniture</button>
+        <button id="bt1" class="active" onclick="filterProducts(1,'All')">
+          All
+        </button>
+        <button id="bt2" onclick="filterProducts(2,'Electronics')">
+          Electronics
+        </button>
+        <button id="bt3" onclick="filterProducts(3,'Clothing')">
+          Clothing
+        </button>
+        <button id="bt4" onclick="filterProducts(4,'Furniture')">
+          Furniture
+        </button>
       </div>
-      <div></div>
+      <div id="productsSicton" class="products-section"></div>
     </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
