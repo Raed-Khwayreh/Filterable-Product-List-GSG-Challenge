@@ -1,0 +1,50 @@
+:root {
+  --primary-color: #27bea5;
+  --hover-color: #d0dfdd;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+}
+
+h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.filter-section {
+  border: #333 2px solid;
+  border-radius: 55px;
+  max-width: fit-content;
+}
+
+.filter-section button {
+  padding: 10px 25px;
+  font-size: 15px;
+  font-weight: 600;
+  background-color: transparent;
+  color: black;
+  border: none;
+  border-radius: 55px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.filter-section button:hover {
+  background-color: var(--hover-color);
+}
