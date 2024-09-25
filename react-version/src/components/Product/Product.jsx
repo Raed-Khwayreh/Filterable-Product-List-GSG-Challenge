@@ -6,7 +6,7 @@ const Product = ({ product }) => {
     <div className="product">
       <h2>{product.name}</h2>
       <p>Category: {product.category}</p>
-      <p class="price">{`${product.price.toFixed(2)}$`}</p>
+      <p className="price">{`${product.price.toFixed(2)}$`}</p>
     </div>
   );
 };
