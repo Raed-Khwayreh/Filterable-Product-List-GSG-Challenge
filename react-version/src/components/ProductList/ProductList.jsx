@@ -1,12 +1,11 @@
 import React from "react";
 import "./ProductList.css";
-import { productsList } from "../../mocks";
 import Product from "../Product/Product";
 
-const ProductList = () => {
+const ProductList = ({ list }) => {
   return (
     <div className="products-section">
-      {productsList.map((product, index) => (
+      {list.map((product, index) => (
         <Product key={index} product={product} />
       ))}
     </div>
